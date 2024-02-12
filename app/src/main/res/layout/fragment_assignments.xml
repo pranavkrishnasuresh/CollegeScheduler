@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/assignmentsbackground"
+    tools:context=".AssignmentsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewAssignments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="173dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="180dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Assignments"
+            android:textColor="@color/offwhite"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@id/listViewAssignments"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextAssignments"
+            android:layout_width="165dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="60dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Name"
+            android:backgroundTint="@color/offwhite"
+            android:textColor="@color/offwhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonAssignments"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/dividerAssignments"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/buttonAssignments"
+            android:layout_width="113dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="56dp"
+            android:text="Add Item"
+            android:textColor="@color/offwhite"
+            android:backgroundTint="@color/buttoncolor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <View
+            android:id="@+id/dividerAssignments"
+            android:layout_width="408dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="32dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toTopOf="@+id/buttonAssignments"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/listViewAssignments" />
+
+        <ListView
+            android:id="@+id/listViewAssignments"
+            android:layout_width="382dp"
+            android:layout_height="440dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/dividerAssignments"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.448"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAssignments"
+            app:layout_constraintVertical_bias="0.58" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="165dp"
+            android:layout_height="41dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="4dp"
+            android:ems="10"
+            android:inputType="date"
+            android:text="Due Date"
+            android:backgroundTint="@color/offwhite"
+            android:textColor="@color/offwhite"
+            app:layout_constraintBottom_toTopOf="@+id/editTextAssignments"
+            app:layout_constraintEnd_toStartOf="@+id/editTextClass"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextClass"
+            android:layout_width="165dp"
+            android:layout_height="41dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="4dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Class"
+            android:backgroundTint="@color/offwhite"
+            android:textColor="@color/offwhite"
+            app:layout_constraintBottom_toTopOf="@+id/buttonAssignments"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

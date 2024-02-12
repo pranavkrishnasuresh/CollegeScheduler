@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/classesbackground"
+    tools:context=".ClassesFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewClasses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="173dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="180dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Classes"
+            android:textSize="24sp"
+            android:textColor="@color/offwhite"
+            app:layout_constraintBottom_toTopOf="@id/listViewClasses"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextClasses"
+            android:layout_width="165dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="60dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Class"
+            android:backgroundTint="@color/offwhite"
+            android:textColor="@color/offwhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonClasses"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/dividerClasses"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/buttonClasses"
+            android:layout_width="113dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="56dp"
+            android:text="Add Item"
+            android:textColor="@color/offwhite"
+            android:backgroundTint="@color/buttoncolor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <View
+            android:id="@+id/dividerClasses"
+            android:layout_width="408dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="32dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toTopOf="@+id/buttonClasses"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/listViewClasses" />
+
+        <ListView
+            android:id="@+id/listViewClasses"
+            android:layout_width="382dp"
+            android:layout_height="440dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/dividerClasses"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.448"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewClasses"
+            app:layout_constraintVertical_bias="0.58" />
+
+
+
+        <EditText
+            android:id="@+id/editTextTime"
+            android:layout_width="165dp"
+            android:layout_height="41dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="4dp"
+            android:ems="10"
+            android:inputType="time"
+            android:text="Time"
+            android:backgroundTint="@color/offwhite"
+            android:textColor="@color/offwhite"
+            app:layout_constraintBottom_toTopOf="@+id/editTextClasses"
+            app:layout_constraintEnd_toStartOf="@+id/editTextProfessor"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextProfessor"
+            android:layout_width="165dp"
+            android:layout_height="41dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="4dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Professor"
+            android:backgroundTint="@color/offwhite"
+            android:textColor="@color/offwhite"
+            app:layout_constraintBottom_toTopOf="@+id/buttonClasses"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

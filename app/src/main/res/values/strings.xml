@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">college9</string>
+    <string name="classes">Classes</string>
+    <string name="assignments">Assignments</string>
+    <string name="exams">Exams</string>
+    <string name="to_do">To-Do</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

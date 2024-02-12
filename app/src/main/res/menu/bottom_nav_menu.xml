@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/todo"
+        android:title="@string/to_do"
+        android:icon="@drawable/todo"
+        android:visible="true"
+        android:enabled="true"
+        />
+    <item
+        android:id="@+id/classes"
+        android:title="@string/classes"
+        android:icon="@drawable/classes"
+        android:visible="true"
+        android:enabled="true"
+        />
+    <item
+        android:id="@+id/assignments"
+        android:title="@string/assignments"
+        android:icon="@drawable/assignments"
+        android:visible="true"
+        android:enabled="true"
+        />
+    <item
+        android:id="@+id/exams"
+        android:title="@string/exams"
+        android:icon="@drawable/exams"
+        android:visible="true"
+        android:enabled="true"
+        />
+</menu>
